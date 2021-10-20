@@ -10,10 +10,14 @@ Here are the main requirements for the project.
 
 - or this project, you should use the HTML&CSS linter
 - The 2 sections you need to build for this project are:
-    1. the toolbar (or header):\
-    ![alt](./img/toolbar-mobile.png)  
-    2. the headline section (right after the header):\
-    ![alt](./img/headline-mobile.png)  
+    1. the toolbar (or header):
+
+    ![alt](./img/toolbar-mobile.png)
+
+    2. the headline section (right after the header):
+
+    ![alt](./img/headline-mobile.png)
+
 - In order to lay out the elements on the page you should use Flexbox in all 2 sections.
 - You don't need to implement any functionality that requires JavaScript, like opening the menu or creating dropdowns.
 - You must stick to the design as much as possible (e.g. font, colors, images, tests, margins) using the templates in Figma.

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+#container {
+  padding: 1rem;
+  border: 1px solid red;
+  height: 100%;
+}
+
+#navigation {
+  padding: 0 8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.big {
+  margin-right: 2rem;
+}
+
+#logo {
+  color: #6070FF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+#hidden {
+  display: none;
+  color: #6070FF;
+}
+
+#bottom {
+  display: flex;
+  align-items: center;
+  background-image: url(img/Header.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FFF;
+  height: calc(100% - 1rem);
+}
+
+#main {
+  margin: 0 auto;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 700;
+}
+
+#main-text {
+  font-size: 20px;
+  line-height: 28px;
+  width: 85%;
+}
+
+#connect-text {
+  font-size: 1rem;
+  line-height: 24px;
+  font-weight: 500;
+  color: #7F8CFF;
+  margin-top: 1rem;
+}
+
+#social-icon {
+  display: flex;
+}
+
+.fab {
+  font-size: 20px;
+  margin-right: 1.2rem;
+  margin-top: 0.6rem;
+}
+
+/* Media queries */
+
+@media (max-width: 375px) {
+  #navigation {
+    padding: 0px;
+  }
+
+  .big {
+    display: none;
+  }
+
+  #hidden {
+    display: block;
+  }
+
+  #menu {
+    flex-direction: row-reverse;
+    min-width: none;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  #main-text {
+    width: 100%;
+    margin-top: 0.8rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #navigation {
+    padding: 0px;
+  }
+
+  #main {
+    width: 100%;
+  }
+
+  #main-text {
+    width: 100%;
+    margin-top: 0.8rem;
+    font-size: 1rem;
+  }
+
+  #menu {
+    min-width: none;
+  }
+
+  .big {
+    margin-right: 1rem;
+  }
+}
