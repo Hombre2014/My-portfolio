@@ -2,7 +2,7 @@
 
 # Yuriy Chamkoriyski Microverse Portfolio
 
-> Portfolio web site, showcasing my projects while stuying at Microverse.
+> Portfolio web site, showcasing my projects while studying at Microverse.
 
 ![screenshot](./img/headline-mobile.png)
 
