@@ -12,11 +12,11 @@ Here are the main requirements for the project.
 - The 2 sections you need to build for this project are:
     1. the toolbar (or header):
 
-    ![alt](./img/toolbar-mobile.png)
+  ![Toolbar](./img/toolbar-mobile.png)
 
     2. the headline section (right after the header):
 
-    ![alt](./img/headline-mobile.png)
+  ![Headline](./img/headline-mobile.png)
 
 - In order to lay out the elements on the page you should use Flexbox in all 2 sections.
 - You don't need to implement any functionality that requires JavaScript, like opening the menu or creating dropdowns.

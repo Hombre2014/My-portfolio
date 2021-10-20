@@ -2,8 +2,8 @@
 
 * {
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -32,7 +32,7 @@ body {
 }
 
 #logo {
-  color: #6070FF;
+  color: #6070ff;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -45,7 +45,7 @@ li {
 
 #hidden {
   display: none;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 #bottom {
@@ -55,7 +55,7 @@ li {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #FFF;
+  background-color: #fff;
   height: calc(100% - 1rem);
 }
 
@@ -100,7 +100,7 @@ li {
 
 @media (max-width: 375px) {
   #navigation {
-    padding: 0px;
+    padding: 0;
   }
 
   .big {
@@ -113,7 +113,6 @@ li {
 
   #menu {
     flex-direction: row-reverse;
-    min-width: none;
   }
 
   #main {
@@ -129,7 +128,7 @@ li {
 
 @media (max-width: 768px) {
   #navigation {
-    padding: 0px;
+    padding: 0;
   }
 
   #main {
@@ -140,10 +139,6 @@ li {
     width: 100%;
     margin-top: 0.8rem;
     font-size: 1rem;
-  }
-
-  #menu {
-    min-width: none;
   }
 
   .big {
