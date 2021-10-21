@@ -14,6 +14,10 @@ body {
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   padding: 1rem;
   height: 100%;
@@ -26,11 +30,14 @@ header {
 }
 
 .logo {
-  color: #6070ff;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+}
+
+.logo-text {
+  color: #6070ff;
 }
 
 .hidden {
@@ -108,15 +115,12 @@ li {
   header {
     padding: 0;
   }
-
   .menu-item {
     margin-right: 1rem;
   }
-
   .main {
     width: 100%;
   }
-
   .main-text {
     width: 100%;
     margin-top: 0.8rem;
@@ -125,36 +129,32 @@ li {
 }
 
 @media (max-width: 375px) {
-  header {
+  .container {
     padding: 0;
   }
-
+  header {
+    margin: 3rem 1.5rem 0 1.5rem;
+  }
   .hidden {
     display: block;
   }
-
   .menu {
     flex-direction: row-reverse;
   }
-
   .menu-item {
     display: none;
   }
-
   .headline {
     background-image: url(img/header-shapes\ mobile.png);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: #fff;
-    height: calc(100% - 1rem);
-    width: 100%;
+    position: absolute;
+    width: 462px;
+    height: 587.15px;
+    left: -44px;
+    top: 104px;
   }
-
   .main {
-    width: 100%;
+    width: 327px;
   }
-
   .title {
     font-size: 40px;
     line-height: 52px;
@@ -162,7 +162,6 @@ li {
     font-weight: 700;
     font-style: normal;
   }
-
   .main-text {
     width: 100%;
     margin-top: 12px;
