@@ -115,12 +115,15 @@ li {
   header {
     padding: 0;
   }
+
   .menu-item {
     margin-right: 1rem;
   }
+
   .main {
     width: 100%;
   }
+
   .main-text {
     width: 100%;
     margin-top: 0.8rem;
@@ -132,18 +135,23 @@ li {
   .container {
     padding: 0;
   }
+
   header {
     margin: 3rem 1.5rem 0 1.5rem;
   }
+
   .hidden {
     display: block;
   }
+
   .menu {
     flex-direction: row-reverse;
   }
+
   .menu-item {
     display: none;
   }
+  
   .headline {
     background-image: url(img/header-shapes\ mobile.png);
     position: absolute;
@@ -152,9 +160,11 @@ li {
     left: -44px;
     top: 104px;
   }
+
   .main {
     width: 327px;
   }
+
   .title {
     font-size: 40px;
     line-height: 52px;
@@ -162,6 +172,7 @@ li {
     font-weight: 700;
     font-style: normal;
   }
+  
   .main-text {
     width: 100%;
     margin-top: 12px;
