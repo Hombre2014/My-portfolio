@@ -151,7 +151,7 @@ li {
   .menu-item {
     display: none;
   }
-  
+
   .headline {
     background-image: url(img/header-shapes\ mobile.png);
     position: absolute;
@@ -172,7 +172,7 @@ li {
     font-weight: 700;
     font-style: normal;
   }
-  
+
   .main-text {
     width: 100%;
     margin-top: 12px;
