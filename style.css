@@ -54,9 +54,6 @@ header {
   width: 100%;
   background-color: #fff;
   height: calc(100% - 1rem);
-  /* position: absolute; */
-  /* width: 1397.4px; */
-  /* height: 721.46px; */
   left: 34.6px;
   top: 119px;
 }
@@ -112,7 +109,6 @@ li {
 
 .works {
   display: grid;
-  display: -ms-grid;
   grid-template-columns: 1fr;
   padding: 114px 24px;
 }
@@ -231,10 +227,6 @@ li {
   align-items: center;
 }
 
-.language-icon {
-  /* margin-right: 3rem; */
-}
-
 .lang-name {
   font-weight: 500;
   font-size: 15px;
@@ -248,34 +240,12 @@ li {
 }
 
 /* Media queries */
-
-/* @media (max-width: 768px) {
-  header {
-    padding: 0;
-  }
-
-  .menu-item {
-    margin-right: 1rem;
-  }
-
-  .main {
-    width: 100%;
-  }
-
-  .main-text {
-    width: 100%;
-    margin-top: 0.8rem;
-    font-size: 1rem;
-  }
-} */
-
-@media (max-width: 414px) {
+@media (max-width: 375px) {
   .container {
     padding: 0;
   }
 
   header {
-    /* margin: 3rem 1.5rem 0 1.5rem; */
     padding: 2rem;
   }
 
