@@ -197,7 +197,7 @@ li {
 .project-btn:hover {
   background-color: #6070ff;
   color: #fff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   cursor: pointer;
 }
 
@@ -207,7 +207,7 @@ li {
 
 .project-btn:disabled,
 button[disabled] {
-  color: #5E6C84;
+  color: #5e6c84;
   border: 1px solid #e5e5e5;
   background-color: #fff;
   cursor: not-allowed;
