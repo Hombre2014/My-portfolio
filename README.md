@@ -4,7 +4,7 @@
 
 > Portfolio web site, showcasing my projects while studying at Microverse.
 
-![screenshot](./img/Yuriy-mobile-portfolio-screenshot.png)
+![screenshot](./img/Yuriy-mobile-portfolio-screenshot.JPG)
 
 Here are the main requirements for the project.
 
