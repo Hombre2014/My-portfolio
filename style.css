@@ -11,7 +11,7 @@
 /* Main styles */
 body {
   font-family: 'Poppins', sans-serif;
-  height: 100vh;
+  background-color: #f5f5f5;
 }
 
 a {
@@ -19,14 +19,15 @@ a {
 }
 
 .container {
-  padding: 1rem;
   height: 100vh;
 }
 
 header {
-  padding: 0 2rem;
+  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
+  height: 10vh;
+  background-color: #fff;
 }
 
 .logo {
@@ -47,35 +48,34 @@ header {
 .headline {
   display: flex;
   align-items: center;
-  background-image: url(img/Header_bg_2x.png);
+  background-image: url(img/header-shapes\ mobile.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 100%;
   background-color: #fff;
-  height: calc(100% - 1rem);
-  left: 34.6px;
-  top: 119px;
+  height: 90vh;
+  border-bottom-left-radius: 64px;
 }
 
 .main {
   margin: 0 auto;
-  width: 65%;
+  width: 87%;
   display: flex;
   flex-direction: column;
 }
 
 .title {
-  font-size: 48px;
-  line-height: 60px;
+  font-size: 40px;
+  line-height: 52px;
   font-weight: 700;
   color: #172b4d;
 }
 
 .main-text {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   color: #344563;
+  margin-top: 12px;
 }
 
 .connect-text {
@@ -84,7 +84,7 @@ header {
   line-height: 24px;
   font-weight: 500;
   color: #7f8cff;
-  margin-top: 1rem;
+  margin-top: 12px;
 }
 
 .icon-list {
@@ -109,7 +109,7 @@ li {
 .works {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 114px 24px;
+  padding: 114px 24px 26px 24px;
 }
 
 .card-work {
@@ -181,7 +181,7 @@ li {
 }
 
 .project-btn {
-  margin-top: 40px;
+  margin-top: 34px;
   padding: 16px;
   font-weight: 500;
   font-size: 17px;
@@ -194,10 +194,36 @@ li {
   border: 1px solid #6070ff;
 }
 
+.project-btn:hover {
+  background-color: #6070ff;
+  color: #fff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  cursor: pointer;
+}
+
+.project-btn:active {
+  background: #2230d2;
+}
+
+.project-btn:disabled,
+button[disabled] {
+  color: #5E6C84;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
 .about {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-top-right-radius: 64px;
   padding: 0 24px;
+}
+
+.myself {
+  padding-top: 114px;
 }
 
 .about-list {
@@ -235,57 +261,4 @@ li {
 
 .line {
   color: #dfe1e6;
-}
-
-/* Media queries */
-@media (max-width: 375px) {
-  .container {
-    padding: 0;
-  }
-
-  header {
-    padding: 2rem;
-  }
-
-  .hidden {
-    display: block;
-  }
-
-  .menu {
-    flex-direction: row-reverse;
-  }
-
-  .menu-item {
-    display: none;
-  }
-
-  .headline {
-    background-image: url(img/header-shapes\ mobile.png);
-    position: absolute;
-    width: 462px;
-    height: 587.15px;
-    left: -34px;
-    top: 104px;
-  }
-
-  .main {
-    width: 65%;
-    margin: auto;
-  }
-
-  .title {
-    font-size: 40px;
-    line-height: 52px;
-    color: #172b4d;
-    font-weight: 700;
-    font-style: normal;
-  }
-
-  .main-text {
-    width: 100%;
-    margin-top: 12px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-  }
 }
