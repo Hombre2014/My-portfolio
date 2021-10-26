@@ -4,7 +4,7 @@
 
 > Portfolio web site, showcasing my projects while studying at Microverse.
 
-![screenshot](./img/Yuriy-mobile-portfolio-screenshot.JPG)
+![screenshot](./img/app-screenshot.png)
 
 Here are the main requirements for the project.
 
@@ -33,11 +33,9 @@ Here are the main requirements for the project.
 
 [Live Demo Link](https://hombre2014.github.io/My-portfolio/)
 
-
 ## Getting Started
 
 **Simply open the link above.**
-
 
 To get a local copy up and running follow these simple example steps.
 
@@ -54,8 +52,6 @@ To get a local copy up and running follow these simple example steps.
 ### Run tests
 
 ### Deployment
-
-
 
 ## Author
 
@@ -77,7 +73,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-
+Thanks for [@gemmen29](https://github.com/gemmen29) George Magdy's contribution in the third part of the project.
 
 ## 📝 License
 

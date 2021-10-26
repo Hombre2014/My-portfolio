@@ -264,6 +264,10 @@ button[disabled] {
 }
 
 footer {
+  background-color: #fff;
+}
+
+.ftr-div {
   background-color: #6070ff;
   border-top-left-radius: 64px;
   padding-bottom: 8px;
@@ -271,10 +275,6 @@ footer {
   background-size: 265px 688px;
   background-repeat: no-repeat;
   background-position: 123px 21px;
-}
-
-.ftr-div {
-  background-color: #fff;
 }
 
 .cnt-form {
