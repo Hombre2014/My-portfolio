@@ -219,7 +219,7 @@ button[disabled] {
   flex-direction: column;
   background-color: #fff;
   border-top-right-radius: 64px;
-  padding: 0 24px;
+  padding: 0 24px 114px 24px;
 }
 
 .myself {
@@ -267,17 +267,19 @@ footer {
   background-color: #6070ff;
   border-top-left-radius: 64px;
   padding-bottom: 8px;
-  margin-top: 114px;
-  background-image: url('img/contact-form.png');
+}
+
+.ftr-div {
+  background-color: #fff;
 }
 
 .cnt-form {
-  padding-top: 103px;
   font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   color: #fff;
   text-align: center;
+  padding-top: 114px;
 }
 
 .container-form {
@@ -324,7 +326,51 @@ textarea {
   margin-top: 2rem;
   height: 5px;
   width: 134px;
-  color: #0d151e;
   background-color: #0d151e;
   border-radius: 10px;
+}
+
+.btn {
+  margin-top: 14px;
+  padding: 16px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  width: fit-content;
+  background-color: #fff;
+  border-radius: 16px;
+  border: 1px solid #6070ff;
+}
+
+.btn:hover {
+  background-color: #4f78be;
+  color: #fff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  cursor: pointer;
+  border: 2px solid white;
+}
+
+.btn:active {
+  background: #2230d2;
+}
+
+.btn:disabled,
+button[disabled] {
+  color: #5e6c84;
+  border: 1px solid #e5e5e5;
+  background-color: #fff;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.bcgrnd-img {
+  background-image: url('img/contact-form.png');
+  position: absolute;
+  width: 265px;
+  height: 760px;
+  left: 137px;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
