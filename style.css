@@ -48,7 +48,7 @@ header {
 .headline {
   display: flex;
   align-items: center;
-  background-image: url(img/header-shapes\ mobile.png);
+  background-image: url('img/header-shapes\ mobile.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
