@@ -266,6 +266,9 @@ button[disabled] {
 footer {
   background-color: #6070ff;
   border-top-left-radius: 64px;
+  padding-bottom: 8px;
+  margin-top: 114px;
+  background-image: url('img/contact-form.png');
 }
 
 .cnt-form {
@@ -281,4 +284,47 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 24px;
+}
+
+.cnt-text {
+  color: #ebebff;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 12px;
+  margin-bottom: 2.5em;
+}
+
+.form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="email"] {
+  height: 48px;
+  border-radius: 8px;
+  border: 1px solid #cfd8dc;
+  font-size: 17px;
+  line-height: 20px;
+  color: #172d4b;
+  padding: 1em;
+}
+
+textarea {
+  height: 140px;
+  color: #b3bac5;
+  font-size: 15px;
+  line-height: 24px;
+  padding: 1em;
+}
+
+#line {
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 5px;
+  width: 134px;
+  color: #0d151e;
+  background-color: #0d151e;
+  border-radius: 10px;
 }
