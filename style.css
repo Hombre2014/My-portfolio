@@ -267,6 +267,10 @@ footer {
   background-color: #6070ff;
   border-top-left-radius: 64px;
   padding-bottom: 8px;
+  background-image: url('img/contact-form.png');
+  background-size: 265px 709.17px;
+  background-repeat: no-repeat;
+  background-position: 123px 21px;
 }
 
 .ftr-div {
@@ -363,14 +367,4 @@ button[disabled] {
   background-color: #fff;
   cursor: not-allowed;
   box-shadow: none;
-}
-
-.bcgrnd-img {
-  background-image: url('img/contact-form.png');
-  position: absolute;
-  width: 265px;
-  height: 760px;
-  left: 137px;
-  background-size: contain;
-  background-repeat: no-repeat;
 }
