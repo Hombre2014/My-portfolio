@@ -52,13 +52,12 @@ header {
 .headline {
   display: flex;
   align-items: center;
-  background-image: url(img/header-shapes\ mobile.png);
-  background-position: center center;
+  background-image: url(img/header-shapes\ mobile2x.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
   height: 90vh;
   border-bottom-left-radius: 64px;
+  background-color: #fff;
 }
 
 .main {
@@ -277,10 +276,12 @@ footer {
   background-color: #6070ff;
   border-top-left-radius: 64px;
   padding-bottom: 8px;
-  background-image: url('img/contact-form.png');
+  background-image: url('img/contact\ form\ shapes-mobile.svg');
   background-size: 265px 688px;
   background-repeat: no-repeat;
-  background-position: 123px 21px;
+  width: 100%;
+  height: auto;
+  background-position: 100% 20%;
 }
 
 .cnt-form {

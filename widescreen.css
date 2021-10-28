@@ -17,11 +17,11 @@ header {
   display: flex;
   align-items: center;
   background-image: url(img/Header\ bg.svg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 1398px 722px;
+  background-size: 100% 680px;
+  background-position: 20px 118px;
+  height: 100vh;
+  width: 100%;
   background-color: #fff;
-  height: 90vh;
   border-bottom-left-radius: 128px;
 }
 
@@ -66,7 +66,7 @@ header {
 }
 
 .works {
-  max-width: 80%;
+  max-width: 88%;
   margin: 0 auto;
 }
 
@@ -85,15 +85,12 @@ ul>li>a {
   border: 2px solid #A7AEFF;
 }
 
-.card-work:hover .project-btn {
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
-  background: #4053FC;
-  color: #fff;
-  margin-top: 44px;
-}
-
 .card-work:nth-child(even) {
   flex-direction: row-reverse;
+}
+
+.card-work>.cl-right {
+  margin-right: 0;
 }
 
 .big-work-img {
@@ -198,12 +195,8 @@ footer {
 }
 
 .cnt-form {
-  /* font-weight: bold; */
   font-size: 40px;
   line-height: 52px;
-  /* color: #fff; */
-  /* text-align: center; */
-  /* padding-top: 114px; */
 }
 
 .cnt-text {
@@ -222,4 +215,10 @@ footer {
 
 label {
   margin-bottom: 27px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .works {
+    width: 80%;
+  }
 }
