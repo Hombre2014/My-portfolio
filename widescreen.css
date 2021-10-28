@@ -13,6 +13,26 @@ header {
   display: none;
 }
 
+.rotate-logo:hover {
+  animation-name: rotateAnimation;
+  animation-duration: 2s;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
 .headline {
   display: flex;
   align-items: center;
