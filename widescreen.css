@@ -13,6 +13,25 @@ header {
   display: none;
 }
 
+.rotate-logo:hover {
+  animation-name: rotateAnimation;
+  animation-duration: 2s;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .headline {
   display: flex;
   align-items: center;
@@ -54,6 +73,14 @@ ul > li > a {
 
 .menu li a {
   color: #344563;
+  padding: 10px;
+  transition: all 2s;
+}
+
+.menu li a:hover {
+  background-color: #7f8cff;
+  color: #fff;
+  border-radius: 10px;
 }
 
 .hidden-on-small {
@@ -116,6 +143,15 @@ ul > li > a {
   max-width: calc(50% - 39px);
   margin-right: 46px;
   flex: 1 1 auto;
+}
+
+.scaled {
+  transition: all 2s;
+}
+
+.scaled:hover {
+  transform: scale(1.04);
+  overflow: hidden;
 }
 
 .big-screen {
@@ -219,6 +255,7 @@ footer {
 
 .cnt-text {
   width: 570px;
+  transition: all 1s;
 }
 
 .cnt-form-controls {
@@ -233,6 +270,10 @@ footer {
 
 label {
   margin-bottom: 27px;
+}
+
+.cnt-text:hover {
+  transform: translateX(10px);
 }
 
 @media only screen and (min-width: 1440px) {
