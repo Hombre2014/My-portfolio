@@ -17,12 +17,31 @@ header {
   display: flex;
   align-items: center;
   background-image: url(img/Header\ bg.svg);
-  background-size: 100% 680px;
-  background-position: 20px 118px;
+  background-size: 98% 71%;
+  background-position: 1.95% 38%;
   height: 100vh;
-  width: 100%;
   background-color: #fff;
   border-bottom-left-radius: 128px;
+}
+
+@media only screen and (min-width: 1220px) {
+  .headline {
+    background-size: 100% 72%;
+  }
+
+  header {
+    padding: 1.5rem 16%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .headline {
+    background-size: 100% 74%;
+  }
+
+  header {
+    padding: 1.5rem 20%;
+  }
 }
 
 .menu {
@@ -183,9 +202,8 @@ footer {
   border-top-left-radius: 128px;
   padding-bottom: 8px;
   background-image: url('img/contact\ form\ background\ shapes.svg');
-  background-size: 1291px 719px;
   background-repeat: no-repeat;
-  background-position: top 80px right 75px;
+  background-size: contain;
   height: 100%;
 }
 
