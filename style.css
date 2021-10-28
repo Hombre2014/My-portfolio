@@ -41,8 +41,12 @@ header {
   color: #6070ff;
 }
 
-.hidden {
+.fa-bars {
   color: #6070ff;
+}
+
+.hidden-on-small {
+  display: none;
 }
 
 .headline {
@@ -110,6 +114,8 @@ li {
   display: grid;
   grid-template-columns: 1fr;
   padding: 114px 24px 26px 24px;
+  justify-items: stretch;
+  margin: 0 auto;
 }
 
 .card-work {
