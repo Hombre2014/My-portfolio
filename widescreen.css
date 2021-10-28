@@ -32,7 +32,6 @@ header {
   }
 }
 
-
 .headline {
   display: flex;
   align-items: center;
@@ -58,6 +57,7 @@ ul > li > a {
   padding: 10px;
   transition: all 2s;
 }
+
 .menu li a:hover {
   background-color: #7f8cff;
   color: #fff;
@@ -237,6 +237,7 @@ footer {
 
 .cnt-text {
   width: 570px;
+  transition: all 1s;
 }
 
 .cnt-form-controls {
@@ -251,10 +252,6 @@ footer {
 
 label {
   margin-bottom: 27px;
-}
-
-.cnt-text {
-  transition: all 1s;
 }
 
 .cnt-text:hover {
