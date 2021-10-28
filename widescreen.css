@@ -29,6 +29,10 @@ header {
   display: flex;
 }
 
+ul > li > a {
+  color: #6070ff;
+}
+
 .menu li a {
   color: #344563;
 }
@@ -70,10 +74,6 @@ header {
   margin: 0 auto;
 }
 
-ul>li>a {
-  color: #6070ff;
-}
-
 .card-work {
   display: flex;
   flex-direction: row;
@@ -82,14 +82,14 @@ ul>li>a {
 }
 
 .card-work:hover {
-  border: 2px solid #A7AEFF;
+  border: 2px solid #a7aeff;
 }
 
 .card-work:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-.card-work>.cl-right {
+.card-work > .cl-right {
   margin-right: 0;
 }
 

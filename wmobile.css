@@ -1,13 +1,11 @@
 @media only screen and (min-width: 458px) and (max-width: 768px) {
   .headline {
     background-size: cover;
-    background-size: 100% 760px;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1023px) {
   .headline {
-    background-size: contain;
     background-image: url(img/header-shapes\ mobile2x.svg);
     background-size: 100% 960px;
     height: 100vh;
