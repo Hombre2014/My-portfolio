@@ -233,6 +233,14 @@ label {
   margin-bottom: 27px;
 }
 
+.cnt-text {
+  transition: all 1s;
+}
+
+.cnt-text:hover {
+  transform: translateX(10px);
+}
+
 @media only screen and (min-width: 1440px) {
   .works {
     width: 80%;
