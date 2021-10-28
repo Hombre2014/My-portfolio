@@ -1,0 +1,21 @@
+@media only screen and (min-width: 458px) and (max-width: 767px) {
+  .headline {
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .headline {
+    background-image: url(img/Header\ bg.svg);
+    background-size: contain;
+    background-size: 100% 514px;
+    background-position: 1.95% 38%;
+  }
+
+  .ftr-div {
+    background-image: url('img/contact form shapes-mobile.svg');
+    height: auto;
+    width: 100%;
+    background-size: contain;
+  }
+}

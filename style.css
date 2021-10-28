@@ -41,20 +41,23 @@ header {
   color: #6070ff;
 }
 
-.hidden {
+.fa-bars {
   color: #6070ff;
+}
+
+.hidden-on-small {
+  display: none;
 }
 
 .headline {
   display: flex;
   align-items: center;
-  background-image: url(img/header-shapes\ mobile.png);
-  background-position: center center;
+  background-image: url(img/header-shapes\ mobile2x.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  background-color: #fff;
   height: 90vh;
   border-bottom-left-radius: 64px;
+  background-color: #fff;
 }
 
 .main {
@@ -110,6 +113,8 @@ li {
   display: grid;
   grid-template-columns: 1fr;
   padding: 114px 24px 26px 24px;
+  justify-items: stretch;
+  margin: 0 auto;
 }
 
 .card-work {
@@ -271,10 +276,9 @@ footer {
   background-color: #6070ff;
   border-top-left-radius: 64px;
   padding-bottom: 8px;
-  background-image: url('img/contact-form.png');
-  background-size: 265px 688px;
+  background-image: url('img/contact\ form\ shapes-mobile.svg');
   background-repeat: no-repeat;
-  background-position: 123px 21px;
+  background-position: 100% 20%;
 }
 
 .cnt-form {
@@ -305,6 +309,7 @@ footer {
 .form-field {
   width: 100%;
   margin-bottom: 20px;
+  font-family: Poppins, sans-serif;
 }
 
 input[type="text"],
