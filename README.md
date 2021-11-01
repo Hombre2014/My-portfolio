@@ -1,35 +1,35 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Yuriy Chamkoriyski Microverse Portfolio
+# Yuriy Chamkoriyski's Microverse Portfolio
 
 > Portfolio web site, showcasing my projects while studying at Microverse.
 
 ![screenshot](./img/app-screenshot.png)
 
-Here are the main requirements for the project.
+## Project list
 
-- or this project, you should use the HTML&CSS linter
-- The 2 sections you need to build for this project are:
-    1. the toolbar (or header):
+I will be building my website portfolio during the first module of the program. Here is the list of projects that will guide me. I will find details about each of the projects requirements in the upcoming program activities. In some of the projects I will be working individually, but in others I will be working collaboratively with my coding partner.
 
-  ![Toolbar](./img/toolbar-mobile.png)
-
-    2. the headline section (right after the header):
-
-  ![Headline](./img/headline-mobile.png)
-
-- In order to lay out the elements on the page you should use Flexbox in all 2 sections.
-- You don't need to implement any functionality that requires JavaScript, like opening the menu or creating dropdowns.
-- You must stick to the design as much as possible (e.g. font, colors, images, tests, margins) using the templates in Figma.
-- Implement the button interactions (enable, hover, etc.).
+- [x] Project 1: Setup and mobile version skeleton
+- [x] Project 2: Mobile version
+- [x] Project 3: Contact form (pair programming)
+- [x] Project 4: Desktop version
+- [ ] Project 5: Application deploy
+- [ ] Project 6: Evaluate accessibility (pair programming)
+- [ ] Project 7: Mobile menu (pair programming)
+- [ ] Project 8: Details modal (pair programming)
+- [ ] Project 9: Validate contact form (pair programming)
+- [ ] Project 10: Preserve data in the browser (pair programming)
 
 ## Built With
 
-- Major languages: HTMLC, CSS
-- Frameworks: none 
-- Technologies used: Git
+- Major languages: HTML, CSS
+- Frameworks: none
+- Technologies used: GitHub, Lighthouse, Webhint, Stylelint
 
 ## Live Demo
+
+You can view the current deployment by clicking the link bellow:
 
 [Live Demo Link](https://hombre2014.github.io/My-portfolio/)
 
@@ -41,23 +41,33 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-- Internet connection and browser
+- Internet connection and a web browser
 
 ### Setup
 
+- No setup required
+
 ### Install
+
+- No installation required
 
 ### Usage
 
+- Enter the URL address (https://hombre2014.github.io/My-portfolio/) in your web browser
+
 ### Run tests
 
+- Lighthouse, Webhint, Stylelint
+
 ### Deployment
+
+- Using GitHub Pages
 
 ## Author
 
 👤 **Yuriy Chamkoriyski**
 
-- GitHub: [@Hombre2014](https://github.com/Hombre2014)
+- GitHub: [@Hombre](https://github.com/Hombre)
 - Twitter: [@Chamkoriyski](https://twitter.com/Chamkoriyski)
 - LinkedIn: [axebit](https://linkedin.com/in/axebit)
 
@@ -65,7 +75,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Hombre2014/My-portfolio/issues).
+Feel free to check the [issues page](https://github.com/Hombre/My-portfolio/issues).
 
 ## Show your support
 
