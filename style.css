@@ -60,6 +60,12 @@ header {
   background-color: #fff;
 }
 
+@media only screen and (min-height: 668px) and (max-height: 812px) {
+  .main {
+    margin-top: -6rem !important;
+  }
+}
+
 .main {
   margin: 0 auto;
   width: 87%;

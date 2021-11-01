@@ -273,7 +273,7 @@ label {
 }
 
 .cnt-text:hover {
-  transform: translateX(10px);
+  transform: scale(1.1);
 }
 
 @media only screen and (min-width: 1440px) {
