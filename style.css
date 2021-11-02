@@ -311,6 +311,7 @@ footer {
 .form-field {
   width: 100%;
   font-family: Poppins, sans-serif;
+  margin-bottom: 1rem;
 }
 
 #last {
