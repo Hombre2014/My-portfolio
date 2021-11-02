@@ -15,16 +15,12 @@ header {
 
 .rotate-logo:hover {
   animation-name: rotateAnimation;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes rotateAnimation {
   from {
     transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
   }
 
   to {
@@ -74,7 +70,7 @@ ul > li > a {
 .menu li a {
   color: #344563;
   padding: 10px;
-  transition: all 2s;
+  transition: all 0.8s;
 }
 
 .menu li a:hover {
