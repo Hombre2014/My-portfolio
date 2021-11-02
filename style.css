@@ -38,7 +38,7 @@ header {
 }
 
 .logo-text {
-  color: #6070ff;
+  color: #5263ff;
 }
 
 .fa-bars {
@@ -92,7 +92,7 @@ header {
   font-size: 1rem;
   line-height: 24px;
   font-weight: 500;
-  color: #7f8cff;
+  color: #5263ff;
   margin-top: 12px;
 }
 
@@ -157,11 +157,7 @@ li {
 }
 
 .grey-color {
-  color: #7a869a;
-}
-
-.slvr-color {
-  color: #c1c7d0;
+  color: #6e7591;
 }
 
 .item {
@@ -304,7 +300,7 @@ footer {
 }
 
 .cnt-text {
-  color: #ebebff;
+  color: #151414;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -314,8 +310,19 @@ footer {
 
 .form-field {
   width: 100%;
-  margin-bottom: 20px;
   font-family: Poppins, sans-serif;
+}
+
+#last {
+  margin-bottom: 0;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.label-text {
+  font-size: 1.125rem;
 }
 
 input[type="text"],
