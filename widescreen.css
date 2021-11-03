@@ -15,16 +15,12 @@ header {
 
 .rotate-logo:hover {
   animation-name: rotateAnimation;
-  animation-duration: 2s;
+  animation-duration: 1s;
 }
 
 @keyframes rotateAnimation {
   from {
     transform: rotate(0deg);
-  }
-
-  50% {
-    transform: rotate(180deg);
   }
 
   to {
@@ -74,11 +70,11 @@ ul > li > a {
 .menu li a {
   color: #344563;
   padding: 10px;
-  transition: all 2s;
+  transition: all 0.8s;
 }
 
 .menu li a:hover {
-  background-color: #7f8cff;
+  background-color: #5263ff;
   color: #fff;
   border-radius: 10px;
 }
@@ -200,7 +196,7 @@ ul > li > a {
 
 .about-text {
   font-size: 1rem;
-  line-height: 24px;
+  line-height: 28px;
   color: #344563;
 }
 
@@ -265,7 +261,7 @@ footer {
 }
 
 .btn-big {
-  margin: 0 auto;
+  margin: 1.75rem auto;
 }
 
 label {
