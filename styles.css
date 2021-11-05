@@ -1,3 +1,9 @@
+/* Import other screen size css */
+/* @import "wmobile.css"; */
+/* @import "widescreen.css"; */
+/* 6070ff must be #0019FA for skills */
+
+
 /* Fonts used */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
@@ -54,21 +60,15 @@ header {
   align-items: center;
   background-image: url(img/header-shapes\ mobile2x.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   height: 90vh;
   border-bottom-left-radius: 64px;
   background-color: #fff;
 }
 
-@media only screen and (min-height: 668px) and (max-height: 812px) {
-  .main {
-    margin-top: -6rem !important;
-  }
-}
-
 .main {
   margin: 0 auto;
-  width: 87%;
+  width: 85%;
   display: flex;
   flex-direction: column;
 }
@@ -175,8 +175,8 @@ li {
   display: flex;
 }
 
-.skill {
-  color: #6070ff;
+.skill>a {
+  color: #0019FA;
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
@@ -281,6 +281,7 @@ footer {
   background-image: url('img/contact\ form\ shapes-mobile.svg');
   background-repeat: no-repeat;
   background-position: 100% 20%;
+  background-size: 60% 88%;
 }
 
 .cnt-form {
