@@ -16,7 +16,7 @@ I will be building my website portfolio during the first module of the program. 
 - [x] Project 4: Desktop version
 - [x] Project 5: Application deploy
 - [x] Project 6: Evaluate accessibility (pair programming)
-- [ ] Project 7: Mobile menu (pair programming)
+- [x] Project 7: Mobile menu (pair programming)
 - [ ] Project 8: Details modal (pair programming)
 - [ ] Project 9: Validate contact form (pair programming)
 - [ ] Project 10: Preserve data in the browser (pair programming)
@@ -83,7 +83,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-Thanks for [@gemmen29](https://github.com/gemmen29) George Magdy's contribution in the third part of the project.
+Thanks to [@gemmen29](https://github.com/gemmen29) George Magdy's contribution in the third part of the project.
+Thnkks to [@nevisende](https://github.com/nevisende) Furkan Denizhan's contribution in mobile menu JS part of the project.
 
 ## 📝 License
 
