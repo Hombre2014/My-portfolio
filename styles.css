@@ -45,6 +45,71 @@ header {
   color: #6070ff;
 }
 
+.skill > a {
+  color: #0019fa;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-right: 20px;
+}
+
+.hamburger-menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 10vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(96, 112, 255, 0.85);
+  backdrop-filter: blur(6px);
+}
+
+.hamburger-menu .menu {
+  margin-top: 15vw;
+}
+
+.hamburger-menu .menu .menu-item a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 44px;
+  letter-spacing: 0.0375rem;
+}
+
+.hamburger-menu .menu .menu-item {
+  margin-bottom: 5vw;
+}
+
+.close-item {
+  display: none;
+}
+
+.hamburger-menu .hamburger-item {
+  display: none;
+}
+
+.hamburger-menu + .hidden-on-big .close-item {
+  display: block;
+  position: fixed;
+  top: 15vw;
+  right: 13vw;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+}
+
+.mob-menu-line {
+  position: absolute;
+  bottom: 1vh;
+  align-self: center;
+}
+
 .hidden-on-small {
   display: none;
 }
@@ -169,18 +234,6 @@ li {
   display: flex;
 }
 
-.skill > a {
-  color: #0019fa;
-  background-color: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  margin-right: 20px;
-}
-
 .project-btn {
   margin-top: 34px;
   padding: 16px;
@@ -260,7 +313,7 @@ button[disabled] {
   margin-left: 2rem;
 }
 
-.line {
+.skill-line {
   color: #dfe1e6;
 }
 
@@ -344,7 +397,7 @@ textarea {
   padding: 1em;
 }
 
-#line {
+.line {
   margin: 0 auto;
   margin-top: 2rem;
   height: 5px;
@@ -386,23 +439,4 @@ button[disabled] {
   background-color: #fff;
   cursor: not-allowed;
   box-shadow: none;
-}
-
-.hamburger-menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #6070ff;
-  opacity: 20%;
-  color: #fff;
-}
-
-.hamburger-menu .hidden-toggle {
-  display: block;
-}
-
-.hidden-toggle {
-  display: none;
 }
