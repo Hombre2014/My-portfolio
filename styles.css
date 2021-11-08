@@ -398,6 +398,7 @@ button[disabled] {
   right: 0;
   bottom: 0;
   background-color: rgba(96, 112, 255, 0.8);
+  backdrop-filter: blur(6px);
 }
 
 .hamburger-menu .menu {
