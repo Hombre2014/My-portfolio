@@ -45,6 +45,18 @@ header {
   color: #6070ff;
 }
 
+.skill > a {
+  color: #0019fa;
+  background-color: #ebebff;
+  border-radius: 8px;
+  padding: 4px 12px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  margin-right: 20px;
+}
+
 .hamburger-menu {
   position: fixed;
   display: flex;
@@ -78,8 +90,7 @@ header {
   display: none;
 }
 
-/* Removed .hidden-on-big and the + sign after .hamburger-menu */
-.hamburger-menu .hamburger-item { 
+.hamburger-menu .hamburger-item {
   display: none;
 }
 
@@ -221,18 +232,6 @@ li {
 .work-skills {
   margin-top: 12px;
   display: flex;
-}
-
-.skill > a {
-  color: #0019fa;
-  background-color: #ebebff;
-  border-radius: 8px;
-  padding: 4px 12px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  margin-right: 20px;
 }
 
 .project-btn {
