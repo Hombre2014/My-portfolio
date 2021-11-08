@@ -27,15 +27,17 @@
   <div class="container">
     <header>
       <span class="logo rotate-logo"><a class="logo-text" title="logo" href="#">My Logo</a></span>
-      <nav class="hidden-on-small">
+      <nav class="navigation hidden-on-small">
         <ul class="menu">
           <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
           <li class="menu-item"><a href="#about">About</a></li>
           <li class="menu-item"><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hidden-on-big mob-menu-line line"></div>
       </nav>
       <nav class="hidden-on-big">
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars hamburger-item"></i>
+        <i class="fas fa-times close-item"></i>
       </nav>
     </header>
     <section class="headline">
@@ -225,14 +227,14 @@
                   <span>Frameworks</span>
                   <i class="fas fa-chevron-right"></i>
                 </div>
-                <hr class="line">
+                <hr class="skill-line">
               </li>
               <li class="item-arrow">
                 <div class="with-arrow">
                   <span>Skills</span>
                   <i class="fas fa-chevron-right"></i>
                 </div>
-                <hr class="line">
+                <hr class="skill-line">
               </li>
             </ul>
           </div>
@@ -268,11 +270,12 @@
               <button type="submit" class="btn btn-big">Get in Touch</button>
             </form>
           </div>
-          <div class="hidden-on-big" id="line"></div>
+          <div class="hidden-on-big line"></div>
         </div>
       </div>
     </footer>
   </div>
+  <script src="menu.js"></script>
 </body>
 
 </html>
