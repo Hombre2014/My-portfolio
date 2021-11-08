@@ -1,7 +1,6 @@
 /* Import other screen size css */
 /* @import "wmobile.css"; */
 /* @import "widescreen.css"; */
-/* 6070ff must be #0019FA for skills */
 
 
 /* Fonts used */
@@ -176,7 +175,7 @@ li {
 }
 
 .skill>a {
-  color: #0019FA;
+  color: #0019fa;
   background-color: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
@@ -317,6 +316,10 @@ footer {
 
 #last {
   margin-bottom: 0;
+}
+
+.aria-h {
+  display: none;
 }
 
 .red {
