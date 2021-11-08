@@ -313,7 +313,7 @@ button[disabled] {
   margin-left: 2rem;
 }
 
-.line {
+.skill-line {
   color: #dfe1e6;
 }
 
@@ -397,7 +397,7 @@ textarea {
   padding: 1em;
 }
 
-#line {
+.line {
   margin: 0 auto;
   margin-top: 2rem;
   height: 5px;
