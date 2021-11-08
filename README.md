@@ -84,7 +84,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 Thanks to [@gemmen29](https://github.com/gemmen29) George Magdy's contribution in the third part of the project.
-Thnkks to [@nevisende](https://github.com/nevisende) Furkan Denizhan's contribution in mobile menu JS part of the project.
+
+Thanks to [@nevisende](https://github.com/nevisende) Furkan Denizhan's contribution in mobile menu JS part of the project.
 
 ## 📝 License
 
