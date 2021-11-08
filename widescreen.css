@@ -23,6 +23,7 @@
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
@@ -107,7 +108,7 @@
     flex-direction: row-reverse;
   }
 
-  .card-work>.cl-right {
+  .card-work > .cl-right {
     margin-right: 0;
   }
 
@@ -196,7 +197,7 @@
   .lang-name {
     margin: 1rem 0;
   }
-  
+
   .lng-icon {
     width: 48px;
   }
@@ -218,7 +219,6 @@
   .foot-big {
     width: 800px;
     margin: 0 auto;
-    
   }
 
   .cnt-form {

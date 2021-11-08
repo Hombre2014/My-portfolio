@@ -1,8 +1,3 @@
-/* Import other screen size css */
-/* @import "wmobile.css"; */
-/* @import "widescreen.css"; */
-
-
 /* Fonts used */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
@@ -174,7 +169,7 @@ li {
   display: flex;
 }
 
-.skill>a {
+.skill > a {
   color: #0019fa;
   background-color: #ebebff;
   border-radius: 8px;
