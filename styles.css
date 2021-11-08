@@ -387,3 +387,22 @@ button[disabled] {
   cursor: not-allowed;
   box-shadow: none;
 }
+
+.hamburger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6070ff;
+  opacity: 20%;
+  color: #fff;
+}
+
+.hamburger-menu .hidden-toggle {
+  display: block;
+}
+
+.hidden-toggle {
+  display: none;
+}
