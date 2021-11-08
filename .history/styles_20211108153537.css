@@ -406,7 +406,3 @@ button[disabled] {
 .hamburger-menu + .hidden-on-big .close-item {
   display: block;
 }
-
-.close-item {
-  display: none;
-}

@@ -403,10 +403,6 @@ button[disabled] {
   display: none;
 }
 
-.hamburger-menu + .hidden-on-big .close-item {
-  display: block;
-}
-
-.close-item {
+.hidden-toggle {
   display: none;
 }

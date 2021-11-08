@@ -399,14 +399,10 @@ button[disabled] {
   color: #fff;
 }
 
-.hamburger-menu + .hidden-on-big .hamburger-item {
+.hamburger-menu + .hidden-on-big .hamurger-item {
   display: none;
 }
 
-.hamburger-menu + .hidden-on-big .close-item {
-  display: block;
-}
-
-.close-item {
+.hidden-toggle {
   display: none;
 }
