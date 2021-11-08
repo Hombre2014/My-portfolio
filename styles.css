@@ -397,7 +397,7 @@ button[disabled] {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(96, 112, 255, 0.8);
+  background-color: rgba(96, 112, 255, 0.85);
   backdrop-filter: blur(6px);
 }
 
@@ -405,15 +405,20 @@ button[disabled] {
   margin-top: 15vw;
 }
 
-.hamburger-menu .menu .menu-item a{
+.hamburger-menu .menu .menu-item a {
   color: #fff;
   font-weight: 600;
   font-size: 2rem;
   line-height: 44px;
+  letter-spacing: 0.0375rem;
 }
 
 .hamburger-menu .menu .menu-item {
   margin-bottom: 5vw;
+}
+
+.close-item {
+  display: none;
 }
 
 .hamburger-menu + .hidden-on-big .hamburger-item {
@@ -430,6 +435,8 @@ button[disabled] {
   border: none;
 }
 
-.close-item {
-  display: none;
+.mob-menu-line {
+  position: absolute;
+  bottom: 1vh;
+  align-self: center;
 }
