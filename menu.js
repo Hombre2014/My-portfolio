@@ -1,4 +1,5 @@
 /*  eslint linebreak-style: ["error", "windows"]    */
+/*  eslint linebreak-style: ["error", "unix"]    */
 
 const hamburgerItem = document.querySelector('.hamburger-item');
 const closeItem = document.querySelector('.close-item');
