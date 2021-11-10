@@ -153,12 +153,15 @@ contactForm.addEventListener('submit', (e) => {
   if (email.value.trim() === '') {
     errorMessage.style.display = 'block';
     errorMessage.innerText = 'Email is required!';
-    e.stopPropagation();
   } else if (emailValidation() === false) {
     errorMessage.style.display = 'block';
-    errorMessage.innerText = 'Please enter your email.';
+    errorMessage.innerText = 'This is not a valid email.';
   } else if (emailLowerCheck() === false) {
     errorMessage.style.display = 'block';
-    errorMessage.innerText = 'Please write your email in Lower case.';
-  } else e.submit();
+    errorMessage.innerText = 'Please write your email in lower case.';
+    errorMessage.scrollIntoView(true);
+  } else {
+    errorMessage.style.display = 'none';
+    contactForm.submit();
+  }
 });

@@ -556,7 +556,7 @@ button[disabled] {
 
 .error-message {
   display: none;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   color: rgb(238, 16, 16);
   background-color: #fff;
   text-align: center;
