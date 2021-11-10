@@ -496,6 +496,10 @@ button[disabled] {
   margin: 2.25rem 1.5rem 3.75rem 1.5rem;
 }
 
+.big-image {
+  width: 100%;
+}
+
 .description {
   margin: 0 1.5rem;
   margin-bottom: 5.2rem;
