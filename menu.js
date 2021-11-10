@@ -1,5 +1,4 @@
 /*  eslint linebreak-style: ["error", "windows"]    */
-/*  eslint linebreak-style: ["error", "unix"]    */
 
 const hamburgerItem = document.querySelector('.hamburger-item');
 const closeItem = document.querySelector('.close-item');
@@ -29,8 +28,8 @@ menuItem.forEach(
 const popupBtns = document.querySelectorAll('.popup-btn');
 const closePopup = document.getElementById('close-popup');
 const popupContainer = document.querySelector('.popup-container');
-// const popupWindow = document.querySelector('.popup');
-// const popupDescription = document.querySelector('.description');
+const popup = document.querySelector('.popup');
+const popupDescription = document.querySelector('.description');
 const popupTitle = document.getElementById('popup-title');
 const popupText = document.getElementById('popup-text');
 const technologiesList = document.querySelector('.popup-skills');
@@ -38,7 +37,6 @@ const technologiesList = document.querySelector('.popup-skills');
 const popupDetails = document.querySelector('.popup-details');
 const liveUrl = document.getElementById('live-url');
 const sourceUrl = document.getElementById('source-url');
-const bigImage = document.querySelector('.big-image');
 
 const projects = [{
   name: 'Tonic',
@@ -93,15 +91,16 @@ popupBtns.forEach((projectButton) => {
       tech.classList.add('popup-skill');
     }
     popupText.innerText = projects[projectNumber - 1].bigDescription;
-    
+
     const imageTag = document.createElement('img');
     imageTag.classList.add('popup-image');
     imageTag.setAttribute('alt', 'Project image');
-    imageTag.setAttribute('src', 'img/popup_big.png');
-    bigImage.innerHTML = ' ';
-    bigImage.appendChild(imageTag);
+    imageTag.setAttribute('src', projects[projectNumber - 1].imageUrl);
+    popup.childNodes.forEach((node) => {
+      if (node.nodeName === 'IMG') node.remove();
+    });
+    popup.insertBefore(imageTag, popupDescription);
 
-    // popupImage.src = projects[projectNumber - 1].imageUrl;
     popupContainer.style.display = 'flex';
     for (let i = 0; i < projects[projectNumber - 1].details.length; i += 1) {
       const det = document.createElement('span');
