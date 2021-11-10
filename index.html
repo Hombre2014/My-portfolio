@@ -67,12 +67,12 @@
           alt="Photo of the main page of project 1">
         <div class="big-screen">
           <h2 class="work-title">Tonic</h2>
-          <div class="canopy">
+          <div class="details">
             <span class="item type">CANOPY</span>
-            <span class="item bullet grey-color">&#8226;</span>
+            <span class="item grey-color">&#8226;</span>
             <span class="item what-type grey-color">Back End Dev</span>
-            <span class="item bullet grey-color">&#8226;</span>
-            <span class="year grey-color">2015</span>
+            <span class="item grey-color">&#8226;</span>
+            <span class="item grey-color">2015</span>
           </div>
           <p class="work-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
           <div>
@@ -82,7 +82,7 @@
               <li class="skill"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">javaScript</a></li>
             </ul>
           </div>
-          <button type="button" class="project-btn">See Project</button>
+          <button type="button" class="project-btn popup-btn" value="1">See Project</button>
         </div>
       </div>
       <div class="card-work">
@@ -91,13 +91,13 @@
           alt="Photo of the main page of project 2">
         <div class="big-screen">
           <h2 class="work-title">Multi-Post Stories</h2>
-          <div class="canopy">
+          <div class="details">
             <span class="item type hidden-on-big">CANOPY</span>
             <span class="item type hidden-on-small">FACEBOOK</span>
-            <span class="item bullet grey-color">&#8226;</span>
+            <span class="item grey-color">&#8226;</span>
             <span class="item what-type grey-color">Back End Dev</span>
-            <span class="item bullet grey-color">&#8226;</span>
-            <span class="year grey-color">2015</span>
+            <span class="item grey-color">&#8226;</span>
+            <span class="item grey-color">2015</span>
           </div>
           <p class="work-text hidden-on-big">A daily selection of privately personalized reads; no accounts or sign-ups
             required.</p>
@@ -111,7 +111,7 @@
               <li class="skill"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">javaScript</a></li>
             </ul>
           </div>
-          <button type="button" class="project-btn">See Project</button>
+          <button type="button" class="project-btn popup-btn" value="2">See Project</button>
         </div>
       </div>
       <div class="card-work">
@@ -121,13 +121,13 @@
         <div class="big-screen">
           <h2 class="work-title hidden-on-big">Tonic</h2>
           <h2 class="work-title hidden-on-small left">Facebook 360</h2>
-          <div class="canopy">
+          <div class="details">
             <span class="item type hidden-on-big">CANOPY</span>
             <span class="item type hidden-on-small">FACEBOOK</span>
-            <span class="item bullet grey-color">&#8226;</span>
+            <span class="item grey-color">&#8226;</span>
             <span class="item what-type grey-color">Back End Dev</span>
-            <span class="item bullet grey-color">&#8226;</span>
-            <span class="year grey-color">2015</span>
+            <span class="item grey-color">&#8226;</span>
+            <span class="item grey-color">2015</span>
           </div>
           <p class="work-text hidden-on-big">A daily selection of privately personalized reads; no accounts or sign-ups
             required.</p>
@@ -141,7 +141,7 @@
               <li class="skill"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">javaScript</a></li>
             </ul>
           </div>
-          <button type="button" class="project-btn">See Project</button>
+          <button type="button" class="project-btn popup-btn" value="3">See Project</button>
         </div>
       </div>
       <div class="card-work">
@@ -151,15 +151,15 @@
         <div class="big-screen">
           <h2 class="work-title hidden-on-big">Multi-Post Stories</h2>
           <h2 class="work-title hidden-on-small left">Uber Navigation</h2>
-          <div class="canopy">
+          <div class="details">
             <span class="item type hidden-on-big">CANOPY</span>
             <span class="item type hidden-on-small">Uber</span>
-            <span class="item bullet grey-color">&#8226;</span>
+            <span class="item grey-color">&#8226;</span>
             <span class="item what-type grey-color hidden-on-big">Back End Dev</span>
             <span class="item what-type grey-color hidden-on-small">Lead Developer</span>
-            <span class="item bullet grey-color">&#8226;</span>
-            <span class="year grey-color hidden-on-big">2015</span>
-            <span class="year grey-color hidden-on-small">2018</span>
+            <span class="item grey-color">&#8226;</span>
+            <span class="item grey-color hidden-on-big">2015</span>
+            <span class="item grey-color hidden-on-small">2018</span>
           </div>
           <p class="work-text hidden-on-big">A daily selection of privately personalized reads; no accounts or sign-ups
             required.</p>
@@ -173,7 +173,7 @@
               <li class="skill"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">javaScript</a></li>
             </ul>
           </div>
-          <button type="button" class="project-btn">See Project</button>
+          <button type="button" class="project-btn popup-btn" value="4">See Project</button>
         </div>
       </div>
     </section>
@@ -274,6 +274,28 @@
         </div>
       </div>
     </footer>
+  </div>
+  <div class="popup-container">
+    <div class="popup">
+      <div class="popup-header">
+        <h2 id="popup-title"> </h2>
+        <i id="close-popup" class="fas fa-times"></i>
+      </div>
+      <div class="popup-details">
+      </div>
+      <div class="description">
+        <p id="popup-text"></p>
+        <div class="tech-links">
+            <ul class="popup-skills"></ul>
+          <hr>
+          <div class="popup-links">
+            <a class="button project-btn" id="live-url">See live <i class="far fa-share-square"></i></a>
+            <a class="button project-btn" id="source-url">See source <i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
   <script src="menu.js"></script>
 </body>

@@ -249,6 +249,36 @@
   .cnt-text:hover {
     transform: scale(1.1);
   }
+
+  /* Popup window */
+
+  .popup {
+    width: 78vw;
+  }
+
+  .popup-header > h2 {
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .popup-details {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+  }
+
+  .description {
+    display: flex;
+    column-gap: 1.75rem;
+  }
+
+  #popup-text {
+    width: 70%;
+  }
+
+  .popup-skills {
+    margin-top: 0;
+  }
 }
 
 @media only screen and (min-width: 1220px) {
