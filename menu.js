@@ -1,4 +1,5 @@
 /*  eslint linebreak-style: ["error", "windows"]    */
+/*  eslint linebreak-style: ["error", "unix"]    */
 
 const hamburgerItem = document.querySelector('.hamburger-item');
 const closeItem = document.querySelector('.close-item');
@@ -124,7 +125,6 @@ closePopup.addEventListener('click', () => {
 });
 // End popup window
 
-
 // Form validation JS
 
 const contactForm = document.getElementById('contact-form');
@@ -137,34 +137,28 @@ function emailValidation() {
 }
 
 function emailLowerCheck() {
-  let arr = email.value.split('');
-  let result;
+  const arr = email.value.split('');
+  let result = true;
   arr.forEach((x) => {
-    if ((x.charCodeAt() >= 97 && x.charCodeAt() <= 122) || x.charCodeAt() == 64 || x.charCodeAt() == 46) {
-      result = true;
-    } else {
+    // eslint-disable-next-line max-len
+    if (!((x.charCodeAt() >= 97 && x.charCodeAt() <= 122) || x.charCodeAt() === 64 || x.charCodeAt() === 46)) {
       result = false;
-    })
-}
+    }
+  });
   return result;
 }
 
 contactForm.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (email.value.trim() == '') {
-    errorMessage.style.display = "block"
-    errorMessage.innerText = "Email is required!";
+  if (email.value.trim() === '') {
+    errorMessage.style.display = 'block';
+    errorMessage.innerText = 'Email is required!';
     e.stopPropagation();
-
-  } else if (emailValidation() == false) {
-    errorMessage.style.display = "block"
-    errorMessage.innerText = "Please enter your email.";
-  } else if (emailLowerCheck() == false) {
-    errorMessage.style.display = "block"
-    errorMessage.innerText = "Please write your email in Lower case.";
-    e.preventDefault();
-    window.history.back();
-
+  } else if (emailValidation() === false) {
+    errorMessage.style.display = 'block';
+    errorMessage.innerText = 'Please enter your email.';
+  } else if (emailLowerCheck() === false) {
+    errorMessage.style.display = 'block';
+    errorMessage.innerText = 'Please write your email in Lower case.';
   } else e.submit();
-
-})
+});
