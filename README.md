@@ -17,7 +17,7 @@ I will be building my website portfolio during the first module of the program. 
 - [x] Project 5: Application deploy
 - [x] Project 6: Evaluate accessibility (pair programming)
 - [x] Project 7: Mobile menu (pair programming)
-- [ ] Project 8: Details modal (pair programming)
+- [x] Project 8: Details modal (pair programming)
 - [ ] Project 9: Validate contact form (pair programming)
 - [ ] Project 10: Preserve data in the browser (pair programming)
 

@@ -553,3 +553,14 @@ button[disabled] {
   margin: 0;
   color: #6070ff;
 }
+
+.error-message {
+  display: none;
+  margin-top: 1rem;
+  color: rgb(238, 16, 16);
+  background-color: #fff;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 22px;
+  font-weight: 500;
+}

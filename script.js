@@ -1,29 +1,30 @@
 /*  eslint linebreak-style: ["error", "windows"]    */
 /*  eslint linebreak-style: ["error", "unix"]    */
 
+// Hamburger menu open close
 const hamburgerItem = document.querySelector('.hamburger-item');
 const closeItem = document.querySelector('.close-item');
 const hamburgerMenu = document.querySelector('.navigation');
 const menuItem = document.querySelectorAll('.menu-item');
 
-closeItem.addEventListener('click', () => {
-  hamburgerMenu.classList.remove('hamburger-menu');
-  hamburgerMenu.classList.add('hidden-on-small');
-});
-
-hamburgerItem.addEventListener('click', () => {
-  hamburgerMenu.classList.remove('hidden-on-small');
-  hamburgerMenu.classList.add('hamburger-menu');
-});
-
-menuItem.forEach(
-  (menuItem) => {
-    menuItem.addEventListener('click', () => {
-      hamburgerMenu.classList.remove('hamburger-menu');
-      hamburgerMenu.classList.add('hidden-on-small');
-    });
-  },
-);
+function openCloseMenu() {
+  closeItem.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('hamburger-menu');
+    hamburgerMenu.classList.add('hidden-on-small');
+  });
+  hamburgerItem.addEventListener('click', () => {
+    hamburgerMenu.classList.remove('hidden-on-small');
+    hamburgerMenu.classList.add('hamburger-menu');
+  });
+  menuItem.forEach(
+    (menuItem) => {
+      menuItem.addEventListener('click', () => {
+        hamburgerMenu.classList.remove('hamburger-menu');
+        hamburgerMenu.classList.add('hidden-on-small');
+      });
+    },
+  );
+}
 
 // Popup window JS
 const popupBtns = document.querySelectorAll('.popup-btn');
@@ -34,11 +35,9 @@ const popupDescription = document.querySelector('.description');
 const popupTitle = document.getElementById('popup-title');
 const popupText = document.getElementById('popup-text');
 const technologiesList = document.querySelector('.popup-skills');
-// const popupImage = document.querySelector('.popup-image');
 const popupDetails = document.querySelector('.popup-details');
 const liveUrl = document.getElementById('live-url');
 const sourceUrl = document.getElementById('source-url');
-
 const projects = [{
   name: 'Tonic',
   details: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
@@ -79,48 +78,102 @@ const projects = [{
   linkLive: 'https://hombre2014.github.io/My-portfolio/',
   linkSource: 'https://github.com/Hombre2014/My-portfolio',
 }];
-popupBtns.forEach((projectButton) => {
-  projectButton.addEventListener('click', () => {
-    const projectNumber = projectButton.value;
-    popupTitle.innerText = projects[projectNumber - 1].name;
-    technologiesList.innerHTML = '';
-    popupDetails.innerHTML = '';
-    for (let i = 0; i < projects[projectNumber - 1].technologies.length; i += 1) {
-      const tech = document.createElement('li');
-      tech.innerText = projects[projectNumber - 1].technologies[i];
-      technologiesList.appendChild(tech);
-      tech.classList.add('popup-skill');
-    }
-    popupText.innerText = projects[projectNumber - 1].bigDescription;
 
-    const imageTag = document.createElement('img');
-    imageTag.classList.add('popup-image');
-    imageTag.setAttribute('alt', 'Project image');
-    imageTag.setAttribute('src', projects[projectNumber - 1].imageUrl);
-    popup.childNodes.forEach((node) => {
-      if (node.nodeName === 'IMG') node.remove();
-    });
-    popup.insertBefore(imageTag, popupDescription);
-
-    popupContainer.style.display = 'flex';
-    for (let i = 0; i < projects[projectNumber - 1].details.length; i += 1) {
-      const det = document.createElement('span');
-      if (i > 0) {
-        const str = '';
-        det.innerText = str + projects[projectNumber - 1].details[i];
-        det.classList.add('grey-color');
-      } else {
-        det.innerText = projects[projectNumber - 1].details[i];
+function popUpProject() {
+  popupBtns.forEach((projectButton) => {
+    projectButton.addEventListener('click', () => {
+      const projectNumber = projectButton.value;
+      popupTitle.innerText = projects[projectNumber - 1].name;
+      technologiesList.innerHTML = '';
+      popupDetails.innerHTML = '';
+      for (let i = 0; i < projects[projectNumber - 1].technologies.length; i += 1) {
+        const tech = document.createElement('li');
+        tech.innerText = projects[projectNumber - 1].technologies[i];
+        technologiesList.appendChild(tech);
+        tech.classList.add('popup-skill');
       }
-      det.classList.add('item');
-      popupDetails.appendChild(det);
-    }
-    liveUrl.href = projects[projectNumber - 1].linkLive;
-    sourceUrl.href = projects[projectNumber - 1].linkSource;
+      popupText.innerText = projects[projectNumber - 1].bigDescription;
+      const imageTag = document.createElement('img');
+      imageTag.classList.add('popup-image');
+      imageTag.setAttribute('alt', 'Project image');
+      imageTag.setAttribute('src', projects[projectNumber - 1].imageUrl);
+      popup.childNodes.forEach((node) => {
+        if (node.nodeName === 'IMG') node.remove();
+      });
+      popup.insertBefore(imageTag, popupDescription);
+      popupContainer.style.display = 'flex';
+      for (let i = 0; i < projects[projectNumber - 1].details.length; i += 1) {
+        const det = document.createElement('span');
+        if (i > 0) {
+          const str = '';
+          det.innerText = str + projects[projectNumber - 1].details[i];
+          det.classList.add('grey-color');
+        } else {
+          det.innerText = projects[projectNumber - 1].details[i];
+        }
+        det.classList.add('item');
+        popupDetails.appendChild(det);
+      }
+      liveUrl.href = projects[projectNumber - 1].linkLive;
+      sourceUrl.href = projects[projectNumber - 1].linkSource;
+    });
   });
-});
+  closePopup.addEventListener('click', () => {
+    popupContainer.style.display = 'none';
+  });
+}
 
-closePopup.addEventListener('click', () => {
-  popupContainer.style.display = 'none';
-});
-// End popup window
+// Form validation
+const contactForm = document.getElementById('contact-form');
+const email = document.getElementById('email');
+const errorMessage = document.querySelector('.error-message');
+
+function emailValidation() {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email.value));
+}
+
+function emailLowerCheck() {
+  const arr = email.value.split('');
+  let result = true;
+  arr.forEach((x) => {
+    if (
+      !(
+        (x.charCodeAt() >= 97 && x.charCodeAt() <= 122)
+        || x.charCodeAt() === 64
+        || x.charCodeAt() === 46
+      )
+    ) {
+      result = false;
+    }
+  });
+  return result;
+}
+
+function formValidation() {
+  contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (email.value.trim() === '') {
+      errorMessage.style.display = 'block';
+      errorMessage.innerText = 'Email is required!';
+    } else if (emailValidation() === false) {
+      errorMessage.style.display = 'block';
+      errorMessage.innerText = 'This is not a valid email.';
+    } else if (emailLowerCheck() === false) {
+      errorMessage.style.display = 'block';
+      errorMessage.innerText = 'Please write your email in lower case.';
+      errorMessage.scrollIntoView(true);
+    } else {
+      errorMessage.style.display = 'none';
+      contactForm.submit();
+    }
+  });
+}
+
+function main() {
+  openCloseMenu();
+  popUpProject();
+  formValidation();
+}
+
+main();
