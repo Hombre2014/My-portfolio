@@ -77,7 +77,7 @@ const projects = [{
   technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
   linkLive: 'https://hombre2014.github.io/My-portfolio/',
   linkSource: 'https://github.com/Hombre2014/My-portfolio',
-}];
+  }];
 
 function popUpProject() {
   popupBtns.forEach((projectButton) => {
@@ -177,3 +177,21 @@ function main() {
 }
 
 main();
+
+
+// Local Storage
+
+const nameContact = document.getElementById('name');
+const messageContact = document.getElementById('msg');
+
+function setInputs() {
+  const localStorageArr = {
+    name: nameContact.value,
+    email: email.value,
+    message: messageContact.value
+  }
+
+  localStorage.setItem('contactForm', JSON.stringify(localStorageArr))
+
+}
+

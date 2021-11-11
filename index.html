@@ -252,17 +252,17 @@
             <form class="cnt-form-controls" action="https://formspree.io/f/xleakzoe" method="post" id="contact-form">
               <label for="name"><span aria-hidden="false" class="label-text aria-h">Please enter your
                   name</span><span aria-hidden="false" class="red aria-h">*</span>
-                <input class="form-field" type="text" id="name" name="user_name" placeholder="Enter your name here"
+                <input class="form-field" type="text" id="name" name="user_name" onkeydown="setInputs()" placeholder="Enter your name here"
                   required maxlength="30">
               </label>
               <label class="label-text" for="email" ><span aria-hidden="false" class="aria-h" >Please enter your
                   email</span><span aria-hidden="false" class="red aria-h">*</span>
-                <input class="form-field" type="email" id="email" name="email" placeholder="Enter your email here"
+                <input class="form-field" type="email" id="email" name="email" onkeydown="setInputs()" placeholder="Enter your email here"
                   required>
               </label>
               <label id="last" class="label-text" for="msg"><span aria-hidden="false" class="aria-h">Please write
                   your message</span><span aria-hidden="false" class="red aria-h">*</span>
-                <textarea class="form-field" name="message" id="msg" cols="30" rows="10" maxlength="500" required
+                <textarea class="form-field" name="message" id="msg" onkeydown="setInputs()" cols="30" rows="10" maxlength="500" required
                   placeholder="Write your message here"></textarea>
               </label>
               <span class="warning aria-h" aria-hidden="false">Fields indicated with "</span><span aria-hidden="false"
