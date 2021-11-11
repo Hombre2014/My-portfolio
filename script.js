@@ -184,6 +184,16 @@ function setInputsToLocalStorage() {
   localStorage.setItem('contactForm', JSON.stringify(localStorageArr));
 }
 
+const nameContact = document.getElementById('name');
+const messageContact = document.getElementById('msg');
+const arrInputs = [nameContact, email, messageContact];
+
+arrInputs.forEach((input) => {
+  input.addEventListener('keyup', () => {
+    setInputsToLocalStorage();
+  })
+});
+
 function setInput() {
   const nameContact = document.getElementById('name');
   const messageContact = document.getElementById('msg');
