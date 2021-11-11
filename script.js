@@ -170,28 +170,38 @@ function formValidation() {
   });
 }
 
+// Local Storage
+
+function setInputsToLocalStorage() {
+  const nameContact = document.getElementById('name');
+  const messageContact = document.getElementById('msg');
+  const emailContact = document.getElementById('email');
+  const localStorageArr = {
+    name: nameContact.value,
+    email: emailContact.value,
+    message: messageContact.value,
+  };
+  localStorage.setItem('contactForm', JSON.stringify(localStorageArr));
+}
+
+function setInput() {
+  const nameContact = document.getElementById('name');
+  const messageContact = document.getElementById('msg');
+  const emailContact = document.getElementById('email');
+  const localStorageArr = JSON.parse(localStorage.getItem('contactForm'));
+  if (localStorage.getItem('contactForm')) {
+    nameContact.value = localStorageArr.name;
+    messageContact.value = localStorageArr.message;
+    emailContact.value = localStorageArr.email;
+    console.log(localStorageArr);
+  }
+}
+
 function main() {
   openCloseMenu();
   popUpProject();
   formValidation();
+  setInput();
 }
 
-main();
-
-
-// Local Storage
-
-const nameContact = document.getElementById('name');
-const messageContact = document.getElementById('msg');
-
-function setInputs() {
-  const localStorageArr = {
-    name: nameContact.value,
-    email: email.value,
-    message: messageContact.value
-  }
-
-  localStorage.setItem('contactForm', JSON.stringify(localStorageArr))
-
-}
-
+window.onload = main();
