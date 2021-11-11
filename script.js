@@ -1,4 +1,3 @@
-/*  eslint linebreak-style: ["error", "windows"]    */
 /*  eslint linebreak-style: ["error", "unix"]    */
 
 // Hamburger menu open close
@@ -77,7 +76,7 @@ const projects = [{
   technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
   linkLive: 'https://hombre2014.github.io/My-portfolio/',
   linkSource: 'https://github.com/Hombre2014/My-portfolio',
-  }];
+}];
 
 function popUpProject() {
   popupBtns.forEach((projectButton) => {
@@ -191,7 +190,7 @@ const arrInputs = [nameContact, email, messageContact];
 arrInputs.forEach((input) => {
   input.addEventListener('keyup', () => {
     setInputsToLocalStorage();
-  })
+  });
 });
 
 function setInput() {
