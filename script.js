@@ -1,4 +1,3 @@
-/*  eslint linebreak-style: ["error", "windows"]    */
 /*  eslint linebreak-style: ["error", "unix"]    */
 
 // Hamburger menu open close
@@ -170,10 +169,47 @@ function formValidation() {
   });
 }
 
+// Local Storage
+
+function setInputsToLocalStorage() {
+  const nameContact = document.getElementById('name');
+  const messageContact = document.getElementById('msg');
+  const emailContact = document.getElementById('email');
+  const localStorageArr = {
+    name: nameContact.value,
+    email: emailContact.value,
+    message: messageContact.value,
+  };
+  localStorage.setItem('contactForm', JSON.stringify(localStorageArr));
+}
+
+const nameContact = document.getElementById('name');
+const messageContact = document.getElementById('msg');
+const arrInputs = [nameContact, email, messageContact];
+
+arrInputs.forEach((input) => {
+  input.addEventListener('keyup', () => {
+    setInputsToLocalStorage();
+  });
+});
+
+function setInput() {
+  const nameContact = document.getElementById('name');
+  const messageContact = document.getElementById('msg');
+  const emailContact = document.getElementById('email');
+  const localStorageArr = JSON.parse(localStorage.getItem('contactForm'));
+  if (localStorage.getItem('contactForm')) {
+    nameContact.value = localStorageArr.name;
+    messageContact.value = localStorageArr.message;
+    emailContact.value = localStorageArr.email;
+  }
+}
+
 function main() {
   openCloseMenu();
   popUpProject();
   formValidation();
+  setInput();
 }
 
-main();
+window.onload = main();
