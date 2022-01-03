@@ -8,7 +8,7 @@
 
 ## Project list
 
-I will be building my website portfolio during the first module of the program. Here is the list of projects that will guide me. I will find details about each of the projects requirements in the upcoming program activities. In some of the projects I will be working individually, but in others I will be working collaboratively with my coding partner.
+I will be building my website portfolio during the first module of the program. Here is the list of projects that will guide me. I will find details about each of the projects requirements in the upcoming program activities. In some of the steps I will be working individually, but in others I will be working collaboratively with my coding partners.
 
 - [x] Project 1: Setup and mobile version skeleton
 - [x] Project 2: Mobile version
@@ -23,9 +23,9 @@ I will be building my website portfolio during the first module of the program. 
 
 ## Built With
 
-- Major languages: HTML, CSS
+- Major languages: HTML, CSS, JavaScript
 - Frameworks: none
-- Technologies used: GitHub, Lighthouse, Webhint, Stylelint
+- Technologies used: GitHub, Lighthouse, Webhint, Stylelint, ESLint
 
 ## Live Demo
 
@@ -37,7 +37,7 @@ You can view the current deployment by clicking the link bellow:
 
 **Simply open the link above.**
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running, follow these simple example steps.
 
 ### Prerequisites
 
@@ -57,7 +57,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Run tests
 
-- Lighthouse, Webhint, Stylelint
+- Lighthouse, Webhint, Stylelint, ESLint
 
 ### Deployment
 
@@ -67,7 +67,7 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Yuriy Chamkoriyski**
 
-- GitHub: [@Hombre](https://github.com/Hombre)
+- GitHub: [@Hombre2014](https://github.com/Hombre2014)
 - Twitter: [@Chamkoriyski](https://twitter.com/Chamkoriyski)
 - LinkedIn: [axebit](https://linkedin.com/in/axebit)
 
