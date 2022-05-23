@@ -4,6 +4,10 @@
     background-size: cover;
   }
 
+  .popup-container {
+    padding: 0.5rem;
+  }
+
   .tech-links {
     width: 100%;
   }
