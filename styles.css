@@ -518,6 +518,10 @@ button[disabled] {
   width: 100%;
 }
 
+.big-work-img {
+  max-width: 50% !important;
+}
+
 .description {
   margin: 0 1.5rem;
   margin-bottom: 5.2rem;

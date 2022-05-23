@@ -42,7 +42,7 @@ const projects = [{
   details: ['Microverse', '•', 'Front-end', '•', '2021'],
   smallDescription: 'This is my first capstone project for HTML/CSS module at Microverse. It also includes some JavaScript DOM manipulation.',
   bigDescription: "This si my first Capstone project at Microverse, after finishing the HTML/CSS module. In this site we had to create a web conference page, where you can show the program, key speakers and to have an about page. The key speakers section had to be dynamically generated using JavaScript. The site is fully-responsive design and it is viewable and operating on all kind of screen sizes. The design, styles, fonts and colors had to follow these design guidelines: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015",
-  imageUrl: 'img/Conf_page_2.JPG',
+  imageUrl: 'img/Conf_page_2.jpg',
   technologies: ['html', 'css', 'javaScript'],
   linkLive: 'https://chamkoriyski.me/Conference-page/',
   linkSource: 'https://github.com/Hombre2014/Conference-page',
