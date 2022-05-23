@@ -531,7 +531,7 @@ button[disabled] {
 .tech-links {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 40%;
 }
 
 .popup-skills {

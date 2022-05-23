@@ -8,6 +8,14 @@
     padding: 0.5rem;
   }
 
+  .work-img {
+    width: 100%;
+  }
+
+  .works {
+    padding: 114px 1rem 26px 1rem;
+  }
+
   .tech-links {
     width: 100%;
   }
@@ -18,6 +26,10 @@
     background-image: url(img/Header\ bg.svg);
     background-size: 100% 75%;
     background-position: 0 38%;
+  }
+
+  .tech-links {
+    width: 100%;
   }
 
   .ftr-div {
