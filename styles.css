@@ -259,7 +259,7 @@ li {
   border: 1px solid #6070ff;
 }
 
-.project-btn>.fa-github {
+.project-btn > .fa-github {
   color: #396df2 !important;
 }
 
@@ -270,7 +270,7 @@ li {
   cursor: pointer;
 }
 
-.project-btn>.fa-github:hover {
+.project-btn > .fa-github:hover {
   color: #000 !important;
 }
 
@@ -570,11 +570,6 @@ button[disabled] {
   font-size: 15px;
   line-height: 20px;
   border-radius: 8px;
-}
-
-.fa-github {
-  margin: 0;
-  color: #6070ff;
 }
 
 .error-message {
