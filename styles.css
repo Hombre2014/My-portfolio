@@ -157,10 +157,16 @@ header {
 
 .icon-list {
   display: flex;
+  align-items: baseline;
 }
 
 li {
   list-style: none;
+}
+
+.fa-github {
+  color: #344563 !important;
+  font-size: 21px;
 }
 
 .fab {
