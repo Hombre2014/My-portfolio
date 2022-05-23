@@ -139,6 +139,10 @@ header {
   color: #172b4d;
 }
 
+.sub-title {
+  color: #172b4d;
+}
+
 .main-text {
   font-size: 16px;
   line-height: 24px;
@@ -165,7 +169,7 @@ li {
 }
 
 .fa-github {
-  color: #344563 !important;
+  color: #505f79 !important;
   font-size: 21px;
 }
 
@@ -255,11 +259,19 @@ li {
   border: 1px solid #6070ff;
 }
 
+.project-btn>.fa-github {
+  color: #396df2 !important;
+}
+
 .project-btn:hover {
   background-color: #6070ff;
   color: #fff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   cursor: pointer;
+}
+
+.project-btn>.fa-github:hover {
+  color: #000 !important;
 }
 
 .project-btn:active {
@@ -519,6 +531,7 @@ button[disabled] {
 .tech-links {
   display: flex;
   flex-direction: column;
+  width: 25%;
 }
 
 .popup-skills {

@@ -38,14 +38,14 @@ const popupDetails = document.querySelector('.popup-details');
 const liveUrl = document.getElementById('live-url');
 const sourceUrl = document.getElementById('source-url');
 const projects = [{
-  name: 'Tonic',
-  details: ['CANOPY', '•', 'Back End Dev', '•', '2015'],
-  smallDescription: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-  bigDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea",
-  imageUrl: 'img/popup_big.png',
-  technologies: ['html', 'css', 'javaScript', 'github', 'Ruby', 'Bootstrap'],
-  linkLive: 'https://hombre2014.github.io/My-portfolio/',
-  linkSource: 'https://github.com/Hombre2014/My-portfolio',
+  name: 'React Global Summit',
+  details: ['Microverse', '•', 'Front-end', '•', '2021'],
+  smallDescription: 'This is my first capstone project for HTML/CSS module at Microverse. It also includes some JavaScript DOM manipulation.',
+  bigDescription: "This si my first Capstone project at Microverse, after finishing the HTML/CSS module. In this site we had to create a web conference page, where you can show the program, key speakers and to have an about page. The key speakers section had to be dynamically generated using JavaScript. The site is fully-responsive design and it is viewable and operating on all kind of screen sizes. The design, styles, fonts and colors had to follow these design guidelines: https://www.behance.net/gallery/29845175/CC-Global-Summit-2015",
+  imageUrl: 'img/Conf_page_2.JPG',
+  technologies: ['html', 'css', 'javaScript'],
+  linkLive: 'https://chamkoriyski.me/Conference-page/',
+  linkSource: 'https://github.com/Hombre2014/Conference-page',
 },
 {
   name: 'Multi-Post Stories',
