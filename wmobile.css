@@ -16,6 +16,11 @@
     padding: 114px 1rem 26px 1rem;
   }
 
+  .work-skills {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
   .tech-links {
     width: 100%;
   }
